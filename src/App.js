@@ -42,7 +42,7 @@ const config = {
     transparency: 0.9,
     limitConnections: true,
     maxConnections: 20,
-    minDistance: 250,
+    minDistance: 300,
     visible: true
   },
   particles: {
@@ -65,40 +65,43 @@ const config = {
     autoRotateSpeed: 0.3,
     resetCameraFlag: false
   }
-}
+};
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <div id="particles">
-//       <ParticleField config={config} />;
-//       </div>
+function App() {
+  return (
+    <div className="App">
+      <div id="particles" style={{ height: "100vh", width: "100%" }}>
+      <ParticleField config={config} />;
+      </div>
 
-//       <div className="mainflex">
-//         <h1 className="centered" style={{ top: '-60px', color: '#ffffff'}}>Recursion</h1>
-//         <ul id="nav-links">
-//           <li>
-//             <img src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
-//           </li>
-//           <li>
-//             <img src="GitHub.svg" width="40px" onClick={handleGithub} />
-//           </li>
-//           <li>
-//             <img src="Mail.svg" width="40px" onClick={handleMail} />
-//           </li>
-//           <li>
-//             <img src="Twitter.svg" width="40px" onClick={handleTwitter} />
-//           </li>
-//           <li>
-//             <img src="YouTube.svg" width="40px" onClick={handleYouTube} />
-//           </li>
-//         </ul>
-//       </div>
+      <div className="mainflex">
+        {/* <h1 className="centered" style={{ top: '-60px', color: '#ffffff'}}>Recursion</h1> */}
+        <img className="centered" src="Recursion Logo Full White.svg"/>
+        
+        <ul id="nav-links">
+          <li>
+            <img src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
+          </li>
+          <li>
+            <img src="GitHub.svg" width="40px" onClick={handleGithub} />
+          </li>
+          <li>
+            <img src="Mail.svg" width="40px" onClick={handleMail} />
+          </li>
+          <li>
+            <img src="Twitter.svg" width="40px" onClick={handleTwitter} />
+          </li>
+          <li>
+            <img src="YouTube.svg" width="40px" onClick={handleYouTube} />
+          </li>
+        </ul>
+        
+      </div>
 
       
-//     </div>
-//   );
-// }
+    </div>
+  );
+}
 
-//export default App;
-export default () => <ParticleField config={config} />;
+export default App;
+// export default () => <ParticleField config={config} />;
