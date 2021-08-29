@@ -98,7 +98,7 @@ function App() {
       {/* <div id="particles" style={{ height: "100vh", width: "100%" }}>
       <ParticleField config={config} />;
       </div> */}
-      <div id = "particle">
+      <div id = "particles">
         <Particles
           params={{
             particles: {
