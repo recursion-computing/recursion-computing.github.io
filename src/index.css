@@ -1,6 +1,5 @@
 body {
   margin: 0;
-  background: #093F79;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -9,5 +8,6 @@ body {
 }
 
 code {
-  font-family: 'Nunito';
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
