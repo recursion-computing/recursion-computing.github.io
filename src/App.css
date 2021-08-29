@@ -18,6 +18,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   justify-content: center;
+  margin-right:48px;
 }
 
 #nav-links {
@@ -35,7 +36,7 @@ ul {
 
 ul li {
   display: inline-flex;
-  padding: 15px;
+  padding: 8px;
 }
 
 img:hover {
