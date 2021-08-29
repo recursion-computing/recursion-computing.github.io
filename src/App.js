@@ -24,7 +24,7 @@ function handleYouTube() {
 }
 
 function handlePublications() {
-  window.open("recursion.li/recursion-convergence-conjecture", '_blank');
+  window.open("https://recursion.is/recursion-convergence-conjecture", '_blank');
 }
 
 // var config = {
@@ -136,7 +136,7 @@ function App() {
 
       <div className="mainflex">
         {/* <h1 className="centered" style={{ top: '-300px', color: '#ffffff'}}>Recursion</h1> */}
-        <img className="centered" style={{ top: '-31px', width: '320px'}} src="Recursion Logo Full White.svg"/>
+        <img className="centered" style={{ top: '-36px', width: '320px'}} src="Recursion Logo Full White.svg"/>
         
         <ul id="nav-links">
           <li>
