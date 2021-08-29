@@ -12,7 +12,7 @@ function handleGithub() {
 }
 
 function handleMail() {
-  window.open("mailto:recursion.computing@gmail.com", '_blank');
+  window.open("mailto:help@recursion.is", '_blank');
 }
 
 function handleTwitter() {
@@ -140,22 +140,22 @@ function App() {
         
         <ul id="nav-links">
           <li>
-            <img src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
+            <img className="icon" src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
           </li>
           <li>
-            <img src="GitHub.svg" width="40px" onClick={handleGithub} />
+            <img className="icon" src="GitHub.svg" width="40px" onClick={handleGithub} />
           </li>
           <li>
-            <img src="Mail.svg" width="40px" onClick={handleMail} />
+            <img className="icon" src="Mail.svg" width="40px" onClick={handleMail} />
           </li>
           <li>
-            <img src="Twitter.svg" width="40px" onClick={handleTwitter} />
+            <img className="icon" src="Twitter.svg" width="40px" onClick={handleTwitter} />
           </li>
           <li>
-            <img src="YouTube.svg" width="40px" onClick={handleYouTube} />
+            <img className="icon" src="YouTube.svg" width="40px" onClick={handleYouTube} />
           </li>
           <li>
-            <img src="Publications.svg" width="40px" onClick={handlePublications} />
+            <img className="icon" src="Publications.svg" width="40px" onClick={handlePublications} />
           </li>
         </ul>
         

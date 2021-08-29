@@ -39,7 +39,12 @@ ul li {
   padding: 8px;
 }
 
-img:hover {
+.icon {
+  transition: transform .7s ease-in-out;
+}
+
+.icon:hover {
+  transform: rotate(360deg);
   cursor: pointer;
 }
 
