@@ -22,7 +22,7 @@ function handleYouTube() {
   window.open("https://www.youtube.com/channel/UCuHB_2AOt8vjuvZZp6tSoxg", '_blank');
 }
 
-const config = {
+var config = {
   showCube: false,
   dimension: '3D',
   velocity: 0.5,
@@ -67,7 +67,27 @@ const config = {
   }
 };
 
+function changeParticleNum(){
+  var w = window.innerWidth;
+  var h = window.innerHeight;
+  //console.log(w,h)
+  //7372800
+  //2073600
+  //204800
+  //250
+  //180
+  //90
+  if (w*h > 100000){
+    console.log("hello")
+    config.particles.count = -450+44*Math.log(w*h)
+  } else {
+    config.particles.count = 30
+  }
+}
+changeParticleNum();
+
 function App() {
+  window.addEventListener('resize', changeParticleNum)
   return (
     <div className="App">
       <div id="particles" style={{ height: "100vh", width: "100%" }}>
