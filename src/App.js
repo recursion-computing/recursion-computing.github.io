@@ -12,7 +12,7 @@ function handleGithub() {
 }
 
 function handleMail() {
-  window.open("mailto:help@recursion.is", '_blank');
+  window.open("mailto:info@recursion.is", '_blank');
 }
 
 function handleTwitter() {
@@ -24,7 +24,11 @@ function handleYouTube() {
 }
 
 function handlePublications() {
-  window.open("https://recursion.is/recursion-convergence-conjecture", '_blank');
+  window.open("https://scholar.recursion.is/", '_blank');
+}
+
+function handleNotes() {
+  window.open("https://notes.recursion.is/", '_blank');
 }
 
 // var config = {
@@ -156,6 +160,9 @@ function App() {
           </li>
           <li>
             <img className="icon" src="Publications.svg" width="40px" onClick={handlePublications} />
+          </li>
+          <li>
+            <img className="icon" src="Obsidian.svg" width="40px" onClick={handleNotes} />
           </li>
         </ul>
         
