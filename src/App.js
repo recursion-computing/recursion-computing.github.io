@@ -138,23 +138,36 @@ function App() {
         </Particles>
       </div>
 
-      <div className="mainflex">
-        {/* <h1 className="centered" style={{ top: '-300px', color: '#ffffff'}}>Recursion</h1> */}
-        <img className="centered" style={{ top: '-36px', width: '320px'}} src="Recursion Logo Full White.svg"/>
-        
+      <div className="centerdock">
+        <img id="logo" width='320px' src="Recursion Logo Full White.svg"/>
+        <br></br>
+        <div id="buttons">
+            <img className="icon" src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
+            <img className="icon" src="GitHub.svg" width="40px" onClick={handleGithub} />
+            <img className="icon" src="Mail.svg" width="40px" onClick={handleMail} />
+            <img className="icon" src="Twitter.svg" width="40px" onClick={handleTwitter} />
+            <img className="icon" src="YouTube.svg" width="40px" onClick={handleYouTube} />
+            <img className="icon" src="Publications.svg" width="40px" onClick={handlePublications} />
+            <img className="icon" src="Obsidian.svg" width="40px" onClick={handleNotes} />
+        </div>
+      </div>
+
+      {/* <div className="mainflex">
+        <img className="centered" style={{ top: '-36px', width: '320px'}} src="Recursion Logo Full White.svg"/> 
         <ul id="nav-links">
           <li>
             <img className="icon" src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
           </li>
           <li>
             <img className="icon" src="GitHub.svg" width="40px" onClick={handleGithub} />
-          </li>
+          </li>	
           <li>
             <img className="icon" src="Mail.svg" width="40px" onClick={handleMail} />
           </li>
           <li>
             <img className="icon" src="Twitter.svg" width="40px" onClick={handleTwitter} />
           </li>
+          <p><br></br></p>
           <li>
             <img className="icon" src="YouTube.svg" width="40px" onClick={handleYouTube} />
           </li>
@@ -165,10 +178,8 @@ function App() {
             <img className="icon" src="Obsidian.svg" width="40px" onClick={handleNotes} />
           </li>
         </ul>
-        
-      </div>
+      </div>  */}
 
-      
     </div>
   );
 }
