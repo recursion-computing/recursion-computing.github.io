@@ -63,7 +63,6 @@ html {
   position: absolute;
   width: 100%;
   height: 100%;
-  z-index: -1;
 }
 
 .centerdock { 
@@ -76,16 +75,21 @@ html {
   align-items: center;
   text-align: center;
   margin: 0 auto;
-  width: 50%
+  width: 65%;
+  pointer-events: none;
 }
 
 
 #logo {
   margin: 0 auto;
-  padding: 8px;
+  padding: 12px;
   width: 100%
 }
 
 #buttons {
   flex: 1 1 33%
+}
+
+.app{
+  pointer-events: none;
 }
