@@ -4,7 +4,7 @@ import Particles from 'react-particles-js';
 import './App.css';
 
 function handleLinkedin() {
-  window.open("https://www.linkedin.com/company/recursion-inc", '_blank');
+  window.open("https://www.linkedin.com/company/recursion-computing", '_blank');
 }
 
 function handleGithub() {
@@ -16,11 +16,11 @@ function handleMail() {
 }
 
 function handleTwitter() {
-  window.open("https://twitter.com/RecursionInc", '_blank');
+  window.open("https://twitter.com/RecursionIs", '_blank');
 }
 
 function handleYouTube() {
-  window.open("https://www.youtube.com/channel/UCuHB_2AOt8vjuvZZp6tSoxg", '_blank');
+  window.open("https://recursion.is/youtube", '_blank');
 }
 
 function handlePublications() {
@@ -29,6 +29,13 @@ function handlePublications() {
 
 function handleNotes() {
   window.open("https://notes.recursion.is/", '_blank');
+}
+
+function handleDiscord() {
+  window.open("https://discord.gg/2kSSsvTVc3", '_blank');
+}
+function handleNick() {
+  window.open("https://nickmaleki.com", '_blank');
 }
 
 // var config = {
@@ -148,7 +155,9 @@ function App() {
             <img className="icon" src="Twitter.svg" width="40px" onClick={handleTwitter} />
             <img className="icon" src="YouTube.svg" width="40px" onClick={handleYouTube} />
             <img className="icon" src="Publications.svg" width="40px" onClick={handlePublications} />
-            <img className="icon" src="Obsidian.svg" width="40px" onClick={handleNotes} />
+            <img className="icon" src="Notes.svg" width="40px" onClick={handleNotes} />
+            <img className="icon" src="Discord.svg" width="40px" onClick={handleDiscord} />
+            <img className="icon" src="Nick.svg" width="40px" onClick={handleNick} />
         </div>
       </div>
 

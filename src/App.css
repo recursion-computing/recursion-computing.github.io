@@ -60,3 +60,18 @@ body {
 .app{
   pointer-events: none;
 }
+
+
+/* ul{
+  text-align: justify;
+}
+
+ul::after {
+  content: '';
+  width: 100%; 
+  display: inline-block;
+}
+
+li{
+  display:inline-block;
+} */
