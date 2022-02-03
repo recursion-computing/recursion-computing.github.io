@@ -88,18 +88,20 @@ canvas {
   margin: 0 auto;
   padding: 12px;
   width: 100%;  
-  pointer-events: auto;
+  pointer-events: none;
 }
 
 #quote {
-  transform: translate(0%, -3%);
+  
   font-family: 'Nunito';
   font-size: 1.5em;
   font-weight: bold;
   font-style: italic;
   color: white;
   text-shadow: 0em 0em .3em #ffffff;
-  width:100%
+  width:100%;
+  pointer-events: auto;
+  transform: translate(0%, -.2em);
 }
 
 #buttons {

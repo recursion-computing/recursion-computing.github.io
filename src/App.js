@@ -79,7 +79,7 @@ function Quote() {
 
   var quote = quotes[Math.floor(Math.random() * quotes.length)];
   console.log(quote)
-  return (<div id="quote">{quote}</div>);
+  return (<div id="quote" onClick={handleRefresh}>{quote}</div>);
 }
 
 // var config = {
@@ -195,7 +195,7 @@ function App() {
 
 
       <div className="centerdock">
-        <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion" onClick={handleRefresh} />
+        <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion"/>
         <br></br>
         <Quote />
         <br></br>
