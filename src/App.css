@@ -2,6 +2,16 @@
   transition: transform .7s ease-in-out;
   pointer-events: auto;
   padding: 6px;
+  filter: drop-shadow(0em 0em .3em rgba(255, 255, 255, 0.7));
+  width: 3.5em;
+}
+
+.iconorange {
+  transition: transform .7s ease-in-out;
+  pointer-events: auto;
+  padding: 6px;
+  filter: drop-shadow(0em 0em .3em #ED7E48);
+  width: 3.5em;
 }
 
 .icon:hover {
@@ -22,8 +32,16 @@ h1 {
 }
 
 body {
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
+}
+
+canvas {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain;
 }
 
 #particles canvas{
@@ -46,11 +64,31 @@ body {
   pointer-events: none;
 }
 
+.img{
+  font-family: 'Nunito';
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 0em 0em .3em #ffffff;
+}
+
 
 #logo {
   margin: 0 auto;
   padding: 12px;
-  width: 100%
+  width: 100%;  
+}
+
+#quote {
+  transform: translate(0%, -5%);
+  font-family: 'Nunito';
+  font-size: 1.5em;
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-shadow: 0em 0em .3em #ffffff;
+  width:100%
 }
 
 #buttons {
@@ -61,6 +99,23 @@ body {
   pointer-events: none;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  display:inline-block;
+}
+
+.container hr {
+  width: 100%;
+  content: '';
+  height: 0; 
+  margin: 0; 
+  border: 0; 
+}
 
 /* ul{
   text-align: justify;
@@ -72,6 +127,4 @@ ul::after {
   display: inline-block;
 }
 
-li{
-  display:inline-block;
-} */
+ */

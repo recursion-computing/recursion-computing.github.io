@@ -38,6 +38,46 @@ function handleNick() {
   window.open("https://nickmaleki.com", '_blank');
 }
 
+function Quote() {
+  var quotes = [
+    'Connecting your thoughts, so you don\'t have to ',
+    'Unbounded thinking',
+    'Thinking about thinking - a meta-analysis',
+    'Fixing broken things, breaking working things',
+    'The Y combinator of thought',
+    'Applied philosophy',
+    'Applied repetition',
+    'Recognizing your potential by taking transparency to the extreme',
+    'True and False',
+    'Neither True nor False',
+    'From the perspective of zero, everything is infinity',
+    'From the perspective of infinity, everything is zero',
+    '"I would rather regret something I did, than something I didn\'t."',
+    '"Steal from the best, invent the rest." - Micheal Corsetto',
+    '"You will never get younger than now."',
+    '"There are no differences but differences of degree between different degrees of difference and no difference." - William James',
+    '“Time is the most valuable thing a person can spend.” - Theophrastus',
+    '“Sooner or later, everything old is new again.” - Steven King',
+    '"That which can be destroyed by the truth should be." - P.C. Hodgell',
+    '"Life itself is an exercise in exceptions." - Jean-Luc Picard',
+    '"This independence created by philosophical insight is - in my opinion - the mark of distinction between a mere artisan or specialist and a real seeker after truth." - Albert Einstein',
+    '"It is okay to make mistakes as long as things are happening."',
+    '"The inventors of the alphabet were unable to read until after they created letters." - u/SirHerald',
+    '"Because Nothing was, therefore All Things are." - Edgar Allen Poe',
+    '"Space and duration are one." - Edgar Allen Poe',
+    '"Rhythmic Balanced Interchange" - Walter Russell',
+    '"We can\'t talk about how reality functions without sounding crazy." - Jack Krause',
+    '"We can\'t just focus on one field of science, we must focus on all of them." - Nick Maleki',
+    '"Both infinity and zero are infinitely certain." - Nick Maleki',
+    '"A transparent vessel, like the glass cup, is inevitable." - Nick Maleki',
+    '"You don\'t know where you are without relativity." - Amir Maleki'
+  ];
+
+  var quote = quotes[Math.floor(Math.random() * quotes.length)];
+  console.log(quote)
+  return (<div id="quote">{quote}</div>);
+}
+
 // var config = {
 //   showCube: false,
 //   dimension: '3D',
@@ -103,13 +143,16 @@ function handleNick() {
 // changeParticleNum();
 
 function App() {
+  // useEffect(() => {
+  // }, []);
   // window.addEventListener('resize', changeParticleNum)
   return (
     <div className="App">
       {/* <div id="particles" style={{ height: "100vh", width: "100%" }}>
       <ParticleField config={config} />;
       </div> */}
-      <div id = "particles">
+
+      <div id="particles">
         <Particles
           params={{
             particles: {
@@ -120,7 +163,7 @@ function App() {
               },
               size: {
                 value: 5,
-		            random: true
+                random: true
               },
               line_linked: {
                 distance: 200,
@@ -145,50 +188,29 @@ function App() {
         </Particles>
       </div>
 
+
+
       <div className="centerdock">
-        <img id="logo" width='320px' src="Recursion Logo Full White.svg"/>
+        <img id="logo" width='320px' src="Recursion Logo Full White Glow.svg" alt="Recursion" />
         <br></br>
-        <div id="buttons">
-            <img className="icon" src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
-            <img className="icon" src="GitHub.svg" width="40px" onClick={handleGithub} />
-            <img className="icon" src="Mail.svg" width="40px" onClick={handleMail} />
-            <img className="icon" src="Twitter.svg" width="40px" onClick={handleTwitter} />
-            <img className="icon" src="YouTube.svg" width="40px" onClick={handleYouTube} />
-            <img className="icon" src="Publications.svg" width="40px" onClick={handlePublications} />
-            <img className="icon" src="Notes.svg" width="40px" onClick={handleNotes} />
-            <img className="icon" src="Discord.svg" width="40px" onClick={handleDiscord} />
-            <img className="icon" src="Nick.svg" width="40px" onClick={handleNick} />
-        </div>
+        <Quote />
+        <br></br>
+        <br></br>
+        <br></br>
+        <nav>
+          <ul>
+            <li><img className="icon" src="LinkedIn.svg" alt="LinkedIn" onClick={handleLinkedin} /></li>
+            <li><img className="icon" src="GitHub.svg" alt="GitHub" onClick={handleGithub} /></li>
+            <li><img className="icon" src="Mail.svg" alt="Email" onClick={handleMail} /></li>
+            <li><img className="icon" src="Twitter.svg" alt="Twitter" onClick={handleTwitter} /></li>
+            <li><img className="iconorange" src="YouTube.svg" alt="YouTube" onClick={handleYouTube} /></li>
+            <li><img className="icon" src="Publications.svg" alt="Publications" onClick={handlePublications} /></li>
+            <li><img className="icon" src="Notes.svg" alt="Notes" onClick={handleNotes} /></li>
+            <li><img className="icon" src="Discord.svg" alt="Discord" onClick={handleDiscord} /></li>
+            <li><img className="icon" src="Nick.svg" alt="Nick" onClick={handleNick} /></li>
+          </ul>
+        </nav>
       </div>
-
-      {/* <div className="mainflex">
-        <img className="centered" style={{ top: '-36px', width: '320px'}} src="Recursion Logo Full White.svg"/> 
-        <ul id="nav-links">
-          <li>
-            <img className="icon" src="LinkedIn.svg" width="40px" onClick={handleLinkedin} />
-          </li>
-          <li>
-            <img className="icon" src="GitHub.svg" width="40px" onClick={handleGithub} />
-          </li>	
-          <li>
-            <img className="icon" src="Mail.svg" width="40px" onClick={handleMail} />
-          </li>
-          <li>
-            <img className="icon" src="Twitter.svg" width="40px" onClick={handleTwitter} />
-          </li>
-          <p><br></br></p>
-          <li>
-            <img className="icon" src="YouTube.svg" width="40px" onClick={handleYouTube} />
-          </li>
-          <li>
-            <img className="icon" src="Publications.svg" width="40px" onClick={handlePublications} />
-          </li>
-          <li>
-            <img className="icon" src="Obsidian.svg" width="40px" onClick={handleNotes} />
-          </li>
-        </ul>
-      </div>  */}
-
     </div>
   );
 }
