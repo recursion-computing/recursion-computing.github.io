@@ -3,6 +3,10 @@ import React from 'react';
 import Particles from 'react-particles-js';
 import './App.css';
 
+function handleRefresh() {
+  window.location.reload();
+}
+
 function handleLinkedin() {
   window.open("https://www.linkedin.com/company/recursion-computing", '_blank');
 }
@@ -58,7 +62,7 @@ function Quote() {
     '"There are no differences but differences of degree between different degrees of difference and no difference." - William James',
     '“Time is the most valuable thing a person can spend.” - Theophrastus',
     '“Sooner or later, everything old is new again.” - Steven King',
-    '"That which can be destroyed by the truth should be." - P.C. Hodgell',
+    '"That which can be destroyed by the truth should be." - Patricia Christine Hodgell',
     '"Life itself is an exercise in exceptions." - Jean-Luc Picard',
     '"This independence created by philosophical insight is - in my opinion - the mark of distinction between a mere artisan or specialist and a real seeker after truth." - Albert Einstein',
     '"It is okay to make mistakes as long as things are happening."',
@@ -191,7 +195,7 @@ function App() {
 
 
       <div className="centerdock">
-        <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion" />
+        <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion" onClick={handleRefresh} />
         <br></br>
         <Quote />
         <br></br>
