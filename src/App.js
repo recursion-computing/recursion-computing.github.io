@@ -191,7 +191,7 @@ function App() {
 
 
       <div className="centerdock">
-        <img id="logo" width='320px' src="Recursion Logo Full White Glow.svg" alt="Recursion" />
+        <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion" />
         <br></br>
         <Quote />
         <br></br>
