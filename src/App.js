@@ -24,7 +24,7 @@ function handleYouTube() {
 }
 
 function handlePublications() {
-  window.open("https://scholar.recursion.is/", '_blank');
+  window.open("https://publications.recursion.is/", '_blank');
 }
 
 function handleNotes() {
