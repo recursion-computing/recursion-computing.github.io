@@ -203,15 +203,15 @@ function App() {
         <br></br>
         <nav>
           <ul>
-            <li><img className="icon" src="LinkedIn.svg" alt="LinkedIn" onClick={handleLinkedin} /></li>
-            <li><img className="icon" src="GitHub.svg" alt="GitHub" onClick={handleGithub} /></li>
-            <li><img className="icon" src="Mail.svg" alt="Email" onClick={handleMail} /></li>
-            <li><img className="icon" src="Twitter.svg" alt="Twitter" onClick={handleTwitter} /></li>
-            <li><img className="iconorange" src="YouTube.svg" alt="YouTube" onClick={handleYouTube} /></li>
-            <li><img className="icon" src="Publications.svg" alt="Publications" onClick={handlePublications} /></li>
-            <li><img className="icon" src="Notes.svg" alt="Notes" onClick={handleNotes} /></li>
-            <li><img className="icon" src="Discord.svg" alt="Discord" onClick={handleDiscord} /></li>
-            <li><img className="icon" src="Nick.svg" alt="Nick" onClick={handleNick} /></li>
+            <li><a href="https://www.linkedin.com/company/recursion-computing"><img className="icon" src="LinkedIn.svg" alt="LinkedIn" onClick={handleLinkedin} /></a></li>
+            <li><a href="https://github.com/recursion-computing"><img className="icon" src="GitHub.svg" alt="GitHub" onClick={handleGithub} /></a></li>
+            <li><a href="mailto:info@recursion.is"><img className="icon" src="Mail.svg" alt="Email" onClick={handleMail} /></a></li>
+            <li><a href="https://twitter.com/RecursionIs"><img className="icon" src="Twitter.svg" alt="Twitter" onClick={handleTwitter} /></a></li>
+            <li><a href="https://recursion.is/youtube"><img className="iconorange" src="YouTube.svg" alt="YouTube" onClick={handleYouTube} /></a></li>
+            <li><a href="https://publications.recursion.is"><img className="icon" src="Publications.svg" alt="Publications" onClick={handlePublications} /></a></li>
+            <li><a href="https://notes.recursion.is"><img className="icon" src="Notes.svg" alt="Notes" onClick={handleNotes} /></a></li>
+            <li><a href="https://discord.gg/2kSSsvTVc3"><img className="icon" src="Discord.svg" alt="Discord" onClick={handleDiscord} /></a></li>
+            <li><a href="https://nickmaleki.com"><img className="icon" src="Nick.svg" alt="Nick" onClick={handleNick} /></a></li>
           </ul>
         </nav>
       </div>
