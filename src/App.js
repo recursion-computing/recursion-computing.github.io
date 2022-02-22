@@ -74,7 +74,11 @@ function Quote() {
     '"We can\'t just focus on one field of science, we must focus on all of them." - Nick Maleki',
     '"Both infinity and zero are infinitely certain." - Nick Maleki',
     '"A transparent vessel, like the glass cup, is inevitable." - Nick Maleki',
-    '"You don\'t know where you are without relativity." - Amir Maleki'
+    '"You don\'t know where you are without relativity." - Amir Maleki',
+    'Introducing infinity from a finite perspective',
+    'Someone\'s entire life: memories, worries, hopes, dreams, fears, and decisions are all contained within the brain.',
+    'Almost all of your neurons form before your birth and may survive after your death. Treat them well.',
+    '"Our unalterable resolution should be to be free." - Samuel Adams'
   ];
 
   var quote = quotes[Math.floor(Math.random() * quotes.length)];
