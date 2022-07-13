@@ -28,6 +28,41 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Nunito" />
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Recursion",
+      "url": "https://recursion.is",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://notes.recursion.is/{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+    <script type="application/ld+json">
+      { "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Recursion",
+      "legalName" : "Recursion Computing, LLC",
+      "url": "https://recursion.is",
+      "logo": "https://media-exp1.licdn.com/dms/image/C4E0BAQGgOrVI-mR3Lw/company-logo_200_200/0/1579717405644?e=1665619200&v=beta&t=8wjsHmVGps2gxOLWJHQsxiviLaZyghnqNYKcTUJIWjQ",
+      "foundingDate": "2020-01-10",
+      "founders": [
+      {
+      "@type": "Person",
+      "name": "Nicholas Maleki"
+      },
+      {
+      "@type": "Person",
+      "name": "Kaci Spears"
+      } ],
+      "sameAs": [ 
+      "https://recursion.is",
+      "https://notes.recursion.is/info"
+      ]}
+     </script>
 </head>
 
 <body>
@@ -37,6 +72,7 @@
   <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xyyoqooz"
     method="post">
     <fieldset id="fs-frm-inputs">
+      <span id='close' onclick='this.parentNode.parentNode.removeChild(this.parentNode); return false;'>x</span>&ensp;
       Would you like to join our mailing list?&emsp;
       <li>
         <label for="full-name">Name</label>
@@ -48,12 +84,11 @@
         <input type="email" name="_replyto" id="email-address" placeholder="info@recursion.is" required="">&emsp;
       </li>
       <li>
-        <label for="message">Message to the team</label>
-        <textarea rows="1" name="message" id="message" placeholder="(optional)"></textarea>
-      </li>
+        <label for="message">Message</label>
+        <textarea rows="1" name="message" id="message" placeholder="optional"></textarea>
+      </li>&emsp;
       <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-      <input type="submit" value="Submit">&emsp;
-      <span id='close' onclick='this.parentNode.parentNode.removeChild(this.parentNode); return false;'>x</span>
+      <input type="submit" value="Submit">
     </fieldset>
   </form>
   <div id="root"></div>
@@ -77,20 +112,19 @@
       background-color: rgba(9, 63, 121, 1);
     }
 
-    #close { 
+    #close {
       cursor: pointer;
       -webkit-appearance: button;
       -moz-appearance: button;
       appearance: button;
-      padding:.1em;
+      padding: .1em;
       border: 2px solid rgba(255, 255, 255, 0.2);
-      float:right;
     }
 
 
     #fs-frm,
     #fs-frm-inputs {
-      width:99%;
+      width: 100%;
       background-color: rgba(9, 63, 121, 1);
       display: inline-block;
       animation: fadeIn ease 3s;
