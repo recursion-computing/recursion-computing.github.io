@@ -1,3 +1,5 @@
+//npm start
+
 import React from 'react';
 // import ParticleField from 'react-particles-webgl';
 import Particles from 'react-particles-js';
@@ -38,9 +40,19 @@ function handleNotes() {
 function handleDiscord() {
   window.open("https://discord.gg/2kSSsvTVc3", '_blank');
 }
+
 function handleNick() {
   window.open("https://nickmaleki.com", '_blank');
 }
+
+function handlePaypal() {
+  window.open("https://paypal.me/RecursionIs", '_blank');
+}
+
+function handlePatreon() {
+  window.open("https://www.patreon.com/RecursionIs", '_blank');
+}
+
 
 function Quote() {
   var quotes = [
@@ -54,6 +66,11 @@ function Quote() {
     'Recognizing your potential by taking transparency to the extreme',
     'True and False',
     'Neither True nor False',
+    'Connections, but with perspective',
+    'Only look at the light when you are ready',
+    'Challenging paradoxes',
+    'The self-application of self-application',
+    'Towards a theory of quantum gravity',
     'From the perspective of zero, everything is infinity',
     'From the perspective of infinity, everything is zero',
     '"I would rather regret something I did, than something I didn\'t."',
@@ -74,6 +91,7 @@ function Quote() {
     '"We can\'t just focus on one field of science, we must focus on all of them." - Nick Maleki',
     '"Both infinity and zero are infinitely certain." - Nick Maleki',
     '"A transparent vessel, like the glass cup, is inevitable." - Nick Maleki',
+    '"I want to see the universe smile" - Nick Maleki',
     '"You don\'t know where you are without relativity." - Amir Maleki',
     'Introducing infinity from a finite perspective',
     'Someone\'s entire life: memories, worries, hopes, dreams, fears, and decisions are all contained within the brain.',
@@ -199,7 +217,9 @@ function App() {
 
 
       <div className="centerdock">
-        <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion"/>
+        <h1>
+          <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion"/>
+        </h1>
         <br></br>
         <Quote />
         <br></br>
@@ -207,6 +227,19 @@ function App() {
         <br></br>
         <nav>
           <ul>
+            <li><img className="icon" src="LinkedIn.svg" alt="LinkedIn" onClick={handleLinkedin} /></li>
+            <li><img className="icon" src="GitHub.svg" alt="GitHub" onClick={handleGithub} /></li>
+            <li><img className="icon" src="Mail.svg" alt="Email" onClick={handleMail} /></li>
+            <li><img className="icon" src="Twitter.svg" alt="Twitter" onClick={handleTwitter} /></li>
+            <li><img className="iconorange" src="YouTube.svg" alt="YouTube" onClick={handleYouTube} /></li>
+            <li><img className="icon" src="Publications.svg" alt="Publications" onClick={handlePublications} /></li>
+            <li><img className="iconorange" src="Notes.svg" alt="Notes" onClick={handleNotes} /></li>
+            <li><img className="icon" src="Discord.svg" alt="Discord" onClick={handleDiscord} /></li>
+            <li><img className="icon" src="Paypal.svg" alt="Discord" onClick={handlePaypal} /></li>
+            <li><img className="icon" src="Patreon.svg" alt="Discord" onClick={handlePatreon} /></li>
+            <li><img className="icon" src="Nick.svg" alt="Nick" onClick={handleNick} /></li>
+          </ul>
+          {/* <ul>
             <li><a href="https://www.linkedin.com/company/recursion-computing"><img className="icon" src="LinkedIn.svg" alt="LinkedIn" onClick={handleLinkedin} /></a></li>
             <li><a href="https://github.com/recursion-computing"><img className="icon" src="GitHub.svg" alt="GitHub" onClick={handleGithub} /></a></li>
             <li><a href="mailto:info@recursion.is"><img className="icon" src="Mail.svg" alt="Email" onClick={handleMail} /></a></li>
@@ -216,8 +249,9 @@ function App() {
             <li><a href="https://notes.recursion.is"><img className="icon" src="Notes.svg" alt="Notes" onClick={handleNotes} /></a></li>
             <li><a href="https://discord.gg/2kSSsvTVc3"><img className="icon" src="Discord.svg" alt="Discord" onClick={handleDiscord} /></a></li>
             <li><a href="https://nickmaleki.com"><img className="icon" src="Nick.svg" alt="Nick" onClick={handleNick} /></a></li>
-          </ul>
+          </ul> */}
         </nav>
+        
       </div>
     </div>
   );

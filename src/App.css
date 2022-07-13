@@ -66,7 +66,7 @@ canvas {
   justify-content: center;
   flex-wrap: wrap;
   min-height: 100vh;
-  transform: translate(0%, -5%);
+  transform: translate(0%, -8%);
   align-items: center;
   text-align: center;
   margin: 0 auto;
