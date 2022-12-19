@@ -15,12 +15,12 @@
 }
 
 .iconorange:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(.9);
   cursor: pointer;
 }
 
 .icon:hover {
-  transform: rotate(360deg);
+  transform: rotate(360deg) scale(.9);
   cursor: pointer;
 }
 
@@ -86,8 +86,8 @@ canvas {
 #logo {
   margin: 0 auto;
   padding: 12px;
-  width: 100%;  
-  pointer-events: none;
+  width: 100%;
+  pointer-events: none; 
 }
 
 #quote {
@@ -100,6 +100,7 @@ canvas {
   width:100%;
   pointer-events: auto;
   transform: translate(0%, -.3em);
+  cursor:pointer;
 }
 
 #buttons {

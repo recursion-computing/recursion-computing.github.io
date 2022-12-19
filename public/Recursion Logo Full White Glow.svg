@@ -172,15 +172,39 @@
          stdDeviation="4.3540845"
          id="feGaussianBlur1745" />
     </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1132"
+       x="-0.1394365"
+       y="-0.1394365"
+       width="1.278873"
+       height="1.278873">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="2.8882025"
+         id="feGaussianBlur1134" />
+    </filter>
+    <mask
+       maskUnits="userSpaceOnUse"
+       id="mask1238">
+      <circle
+         style="mix-blend-mode:normal;fill:#ffffff;stroke:none;stroke-width:6.35;stroke-linecap:round;stroke-linejoin:round;filter:url(#filter1132)"
+         id="circle1240"
+         cx="312.06436"
+         cy="41.069057"
+         r="24.856066"
+         transform="matrix(0.99159206,0,0,0.99159206,0.83622056,-0.11377672)" />
+    </mask>
   </defs>
   <sodipodi:namedview
      showgrid="false"
      inkscape:document-rotation="0"
      inkscape:current-layer="layer1"
      inkscape:document-units="mm"
-     inkscape:cy="164.65486"
-     inkscape:cx="2012.2239"
-     inkscape:zoom="0.49497475"
+     inkscape:cy="251.78571"
+     inkscape:cx="2185"
+     inkscape:zoom="1.4"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0"
      borderopacity="1.0"
@@ -338,31 +362,35 @@
        cx="134.38629"
        id="circle951"
        style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter945)" />
-    <circle
-       style="mix-blend-mode:normal;fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter955)"
-       id="circle953"
-       cx="310.27676"
-       cy="40.609974"
-       r="9.3731327" />
-    <ellipse
-       style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter955)"
-       id="circle959"
-       cx="310.27676"
-       cy="40.609974"
-       rx="9.3730001"
-       ry="9.3731327" />
-    <circle
-       style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter955)"
-       id="circle961"
-       cx="310.27676"
-       cy="40.609974"
-       r="9.3731327" />
-    <circle
-       style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="circle834"
-       cx="310.27676"
-       cy="40.609974"
-       r="9.3731327" />
+    <g
+       id="g1130"
+       mask="url(#mask1238)">
+      <circle
+         style="mix-blend-mode:normal;fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter955)"
+         id="circle953"
+         cx="310.27676"
+         cy="40.609974"
+         r="9.3731327" />
+      <ellipse
+         style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter955)"
+         id="circle959"
+         cx="310.27676"
+         cy="40.609974"
+         rx="9.3730001"
+         ry="9.3731327" />
+      <circle
+         style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter955)"
+         id="circle961"
+         cx="310.27676"
+         cy="40.609974"
+         r="9.3731327" />
+      <circle
+         style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         id="circle834"
+         cx="310.27676"
+         cy="40.609974"
+         r="9.3731327" />
+    </g>
     <circle
        style="fill:#ed7e48;fill-opacity:1;stroke:none;stroke-width:0;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="circle1039"

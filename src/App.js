@@ -70,7 +70,8 @@ function Quote() {
     'Only look at the light when you are ready',
     'Challenging paradoxes',
     'The self-application of self-application',
-    'Towards a theory of quantum gravity',
+    'Towards a theory of gravity at all scales',
+    'The clock is ticking',
     'From the perspective of zero, everything is infinity',
     'From the perspective of infinity, everything is zero',
     '"I would rather regret something I did, than something I didn\'t."',
@@ -172,13 +173,16 @@ function App() {
   // useEffect(() => {
   // }, []);
   // window.addEventListener('resize', changeParticleNum)
+  // document.getElementById('logo').addEventListener('click', function (event) {
+  //           handleNotes()
+  //       });
   return (
     <div className="App">
       {/* <div id="particles" style={{ height: "100vh", width: "100%" }}>
       <ParticleField config={config} />;
       </div> */}
 
-      <div id="particles">
+      <div id="particles" onClick={handleNotes}>
         <Particles
           params={{
             particles: {
@@ -218,7 +222,7 @@ function App() {
 
       <div className="centerdock">
         <h1>
-          <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion"/>
+            <img id="logo" src="Recursion Logo Full White Glow.svg" alt="Recursion"/>
         </h1>
         <br></br>
         <Quote />
