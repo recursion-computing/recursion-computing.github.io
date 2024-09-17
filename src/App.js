@@ -86,8 +86,8 @@ function Quote() {
     '"We can\'t talk about how reality functions without sounding crazy." - Jack',
     '"Both infinity and zero are infinitely certain." - Nick',
     '"A transparent vessel, like the glass cup, is inevitable." - Nick',
-    '"I want to see the universe smile" - Nick,
-    'Search the purpose of the function, not the function!',
+    '"I want to see the universe smile" - Nick',
+    '"Search the purpose of the function, not the function!" - Nick',
     'Anything unintuitive is nonstandard' - Nick, 
     'Treat them well.',
   ];
