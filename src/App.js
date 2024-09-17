@@ -75,7 +75,7 @@ function Quote() {
     '"Steal from the best, invent the rest." - Micheal',
     '"You will never get younger than now."',
     '"There are no differences but differences of degree between different degrees of difference and no difference." - William James',
-    'I just saw myself seeing myself how I seen myself. See for yourself' - Soul,
+    'I just saw myself seeing myself how I seen myself. See for yourself - Soul',
     '"That which can be destroyed by the truth should be." - Patricia',
     '"Life itself is an exercise in exceptions." - Luc',
     '"This independence created by philosophical insight is - in my opinion - the mark of distinction between a mere artisan or specialist and a real seeker after truth." - Albert',
