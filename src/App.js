@@ -2,7 +2,7 @@
 
 import React from 'react';
 // import ParticleField from 'react-particles-webgl';
-import Particles from 'react-particles-js';
+import Particles from 'react-particles';
 import './App.css';
 
 function handleRefresh() {
