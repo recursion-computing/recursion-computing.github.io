@@ -49,6 +49,10 @@ function handlePaypal() {
   window.open("https://paypal.me/RecursionIs", '_blank');
 }
 
+function handleVenmo() { 
+  window.open("https://www.venmo.com/u/Recursion-Computing", '_blank');
+}
+
 function handlePatreon() {
   window.open("https://www.patreon.com/RecursionIs", '_blank');
 }
@@ -231,7 +235,7 @@ function App() {
             <li><img className="icon" src="Publications.svg" alt="Publications" onClick={handlePublications} /></li>
             <li><img className="iconorange" src="Notes.svg" alt="Notes" onClick={handleNotes} /></li>
             <li><img className="icon" src="Discord.svg" alt="Discord" onClick={handleDiscord} /></li>
-            <li><img className="icon" src="Paypal.svg" alt="Discord" onClick={handlePaypal} /></li>
+            <li><img className="icon" src="Venmo.svg" alt="Discord" onClick={handleVenmo} /></li>
             <li><img className="icon" src="Patreon.svg" alt="Discord" onClick={handlePatreon} /></li>
             <li><img className="icon" src="Nick.svg" alt="Nick" onClick={handleNick} /></li>
           </ul>
