@@ -88,8 +88,8 @@ function Quote() {
     '"A transparent vessel, like the glass cup, is inevitable." - Nick',
     '"I want to see the universe smile" - Nick',
     '"Search the purpose of the function, not the function!" - Nick',
-    'Anything unintuitive is nonstandard' - Nick, 
-    'Treat them well.',
+    '"Anything unintuitive is nonstandard" - Nick', 
+    '"Treat them well." - Nick',
   ];
 
   var quote = quotes[Math.floor(Math.random() * quotes.length)];
